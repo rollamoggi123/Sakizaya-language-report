@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1219 期中報告 Midterm Presentation List - 撒奇萊雅語</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body { 
+            background-color: #fffaf0; 
+            font-family: 'Noto Sans TC', sans-serif; 
+        }
+        .sakizaya-text {
+            line-height: 2.2;
+            letter-spacing: 0.03em;
+        }
+        .student-table th {
+            background-color: #92400e; 
+            color: #fef3c7;
+            font-weight: 600;
+        }
+        .page-title-gradient {
+            background: linear-gradient(135deg, #b45309 0%, #d97706 100%);
+        }
+        .bilingual-sub {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: normal;
+            opacity: 0.8;
+            margin-top: 1px;
+        }
+        .editable-name {
+            cursor: text;
+            transition: all 0.2s;
+        }
+        .editable-name:hover {
+            background-color: #fef3c7;
+        }
+        .editable-name:focus {
+            background-color: #fff;
+            outline: 2px solid #d97706;
+            box-shadow: 0 0 10px rgba(217, 119, 6, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.4s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12">
+    <!-- 頂部導覽 / Navigation -->
+    <nav class="bg-slate-900 text-white p-4 shadow-lg mb-0">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold flex items-center gap-2">
+                <i class="fas fa-university text-amber-400"></i> 
+                <div>
+                    族語能力認證學習系統
+                    <span class="bilingual-sub">Indigenous Language Certification System</span>
+                </div>
+            </h1>
+            <div id="connection-indicator" class="text-xs bg-slate-800 px-3 py-1 rounded-full border border-slate-700 text-amber-400">
+                <i class="fas fa-check-circle mr-1"></i> 
+                雲端連動中 <span class="ml-1 opacity-60">Cloud Syncing</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 專屬標題區 / Header Section -->
+    <div class="page-title-gradient text-white py-10 px-4 mb-8 shadow-inner border-b-4 border-amber-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+                1219 期中報告
+            </h2>
+            <p class="text-xl md:text-2xl font-light text-amber-100 italic">
+                Midterm Presentation List
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-sm border border-white/30 flex flex-col items-center">
+                    <span class="font-bold">2025年 12月 19日</span>
+                    <span class="text-[10px] opacity-80 uppercase tracking-widest text-white">December 19, 2025</span>
+                </span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-sm border border-white/30 flex flex-col items-center text-center">
+                    <span class="font-bold text-sm md:text-base">幼教系-族語3-語文教室 (撒奇萊雅語組)</span>
+                    <span class="text-[10px] opacity-80 uppercase tracking-widest text-white">Dept. of ECE - Language Lab (Sakizaya)</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4">
+        
+        <!-- 考生名單區塊 / Student List Section -->
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 mb-10 overflow-hidden">
+            <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                <h3 class="font-bold text-slate-800 flex items-center gap-2 text-lg">
+                    <i class="fas fa-list-ol text-amber-700"></i> 
+                    <div>
+                        撒奇萊雅語報告名單
+                        <span class="text-xs font-normal text-slate-500 block uppercase tracking-tight">Sakizaya Presentation List</span>
+                    </div>
+                </h3>
+                <span class="text-[10px] text-amber-700 bg-white px-2 py-1 rounded border border-amber-100 font-bold">
+                    <i class="fas fa-edit mr-1"></i> 姓名點擊可修改 / Names are Editable
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left student-table">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-4 text-sm">序號 <span class="bilingual-sub">ID</span></th>
+                            <th class="px-6 py-4 text-sm">姓名 (可修改) <span class="bilingual-sub">Name (Editable)</span></th>
+                            <th class="px-6 py-4 text-sm">族語分組 <span class="bilingual-sub">Group</span></th>
+                            <th class="px-6 py-4 text-sm">考生級別 <span class="bilingual-sub">Level</span></th>
+                            <th class="px-6 py-4 text-sm">測驗時段 <span class="bilingual-sub">Schedule</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-amber-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-amber-800 text-lg">08</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">林子嫈</td>
+                            <td class="px-6 py-4 text-slate-600">撒奇萊雅 <span class="text-[10px] text-slate-400 block tracking-tighter italic text-amber-600">Sakizaya</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200 uppercase">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">15:27 - 15:38</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- 左側：考題區 / Questions Section -->
+            <div class="space-y-8 animate-fadeIn">
+                <!-- Task 1: 朗讀考題 -->
+                <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200 ring-1 ring-amber-100">
+                    <div class="px-5 py-4 border-b flex items-center justify-between bg-amber-50/50">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-file-alt text-amber-600 text-xl"></i> 
+                            <div>
+                                <h4 class="font-bold text-slate-800">朗讀考題</h4>
+                                <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter italic">Reading Task</span>
+                            </div>
+                        </span>
+                        <span class="text-[11px] font-bold text-amber-700 bg-white px-2 py-0.5 rounded border border-amber-200">TASK 1</span>
+                    </div>
+                    <div class="p-2 bg-slate-50">
+                         <img src="https://res.cloudinary.com/dm1ksvptk/image/upload/v1766044290/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2025-12-18_154958_ncrlpn.png" 
+                              alt="Sakizaya Reading Exam" 
+                              class="w-full h-auto object-contain rounded-xl shadow-inner">
+                    </div>
+                </div>
+
+                <!-- Task 2: 看圖說故事考題 (已修正標題) -->
+                <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200 ring-1 ring-amber-100">
+                    <div class="px-5 py-4 border-b flex items-center justify-between bg-slate-50">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-comment-dots text-amber-600 text-xl"></i> 
+                            <div>
+                                <h4 class="font-bold text-slate-800">看圖說故事考題</h4>
+                                <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter italic">Storytelling Task</span>
+                            </div>
+                        </span>
+                        <span class="text-[11px] font-bold text-amber-700 bg-white px-2 py-0.5 rounded border border-amber-200">TASK 2</span>
+                    </div>
+                    <div class="p-2 bg-slate-50">
+                        <img src="https://res.cloudinary.com/dm1ksvptk/image/upload/v1766038027/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2025-12-17_114753_xhg2gx.png" 
+                             alt="Sakizaya Storytelling Exam" 
+                             class="w-full h-auto object-contain rounded-xl shadow-inner">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側：播放器與文本 / Player & Content -->
+            <div class="space-y-8 animate-fadeIn">
+                <!-- 播放器區塊 -->
+                <div class="bg-amber-900 p-8 rounded-[2rem] shadow-2xl text-white ring-4 ring-amber-800/50">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold flex items-center gap-3">
+                            <i class="fas fa-headphones-alt text-amber-400"></i> 
+                            <div>
+                                參考音訊播放 
+                                <span class="text-[10px] font-normal text-amber-300 block uppercase tracking-widest">Reference Audio Playback</span>
+                            </div>
+                        </h3>
+                    </div>
+                    <audio controls class="w-full h-12 shadow-inner rounded-lg">
+                        <source src="https://res.cloudinary.com/dm1ksvptk/video/upload/v1766044307/%E6%92%92%E5%A5%87%E8%90%8A%E9%9B%8510-5_uta0fw.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <!-- 讀稿內容文字 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-xl border border-slate-100 relative overflow-hidden ring-1 ring-slate-200">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 -mr-10 -mt-10 rounded-full"></div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6 border-l-4 border-amber-600 pl-4">
+                        朗讀內容文字 
+                        <span class="text-xs font-normal text-slate-500 block uppercase tracking-wider italic">Reading Text Content</span>
+                    </h3>
+                    <div class="mb-4 text-amber-800 font-bold bg-amber-50 px-4 py-2 rounded-lg inline-block text-sm border border-amber-100">
+                        第10階第5課 lacul nu niyazu’ 部落產業
+                    </div>
+                    <div class="sakizaya-text text-2xl md:text-3xl text-slate-700 italic font-medium leading-relaxed bg-slate-50/80 p-8 rounded-2xl border border-dashed border-slate-300 shadow-inner">
+                        "sumamad u tatayna ku angangan nu luma’ay nu Sakizaya. mibuting atu miadup ku sakasikalisiw tu sakauzip, zikuzikuz sa maluk tu, paluma tu, paanip tu, tu sakauzip. zayhan u liwliw aenengan nu binacadan nu Sakizaya, micapi tu buyu’ atu bayu, sisa u lacul nu niyazu’ caay kainayay ku sakauzip a kakanen, maazihay tu a nipalumaan izaw ku kuwa’, paza’, kamaya atu kayabes. u habay ku sakauzip naayaw, imahini u tipus ku paanipen, kyu nauhabay balican tu tipus, malusakauzip tu nu Sakizaya atu sakasikalisiw."
+                    </div>
+                </div>
+
+                <!-- 資源連結 / Resources -->
+                <div class="flex items-center justify-center gap-8 py-4 text-amber-800">
+                    <a href="https://res.cloudinary.com/dm1ksvptk/video/upload/v1766044307/%E6%92%92%E5%A5%87%E8%90%8A%E9%9B%8510-5_uta0fw.mp3" 
+                       target="_blank" 
+                       class="flex flex-col items-center gap-1 font-bold hover:underline group transition-all text-center">
+                        <span class="flex items-center gap-2"><i class="fas fa-file-audio"></i> 下載撒奇萊雅語音檔</span>
+                        <span class="text-[10px] font-normal text-slate-400 group-hover:text-amber-600 uppercase">Download Audio</span>
+                    </a>
+                    <span class="text-slate-200 text-2xl font-light">|</span>
+                    <a href="https://web.klokah.tw/" 
+                       target="_blank" 
+                       class="flex flex-col items-center gap-1 font-bold hover:underline group transition-all text-center">
+                        <span class="flex items-center gap-2"><i class="fas fa-external-link-alt"></i> 族語E樂園</span>
+                        <span class="text-[10px] font-normal text-slate-400 group-hover:text-amber-600 uppercase">E-Learning Portal</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-16 text-center text-slate-400 text-sm py-8 border-t border-slate-200">
+        <p>撒奇萊雅語 | 1219 認證評量輔助系統</p>
+        <p class="mt-1 italic uppercase tracking-widest text-[10px]">© 2025 Midterm Evaluation Management System (Sakizaya)</p>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        async function initFirebase() {
+            try {
+                const configStr = typeof __firebase_config !== 'undefined' ? __firebase_config : null;
+                if (!configStr) return;
+                
+                const firebaseConfig = JSON.parse(configStr);
+                const app = initializeApp(firebaseConfig);
+                const auth = getAuth(app);
+                
+                const token = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+                if (token) {
+                    await signInWithCustomToken(auth, token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => {
+                    const ind = document.getElementById('connection-indicator');
+                    if (user && ind) {
+                        ind.innerHTML = `<i class="fas fa-check-circle text-amber-600 mr-1"></i> 雲端連動成功 <span class="ml-1 opacity-60">Cloud Sync Success</span>`;
+                    }
+                });
+            } catch (err) {}
+        }
+
+        window.addEventListener('DOMContentLoaded', initFirebase);
+    </script>
+</body>
+</html>
